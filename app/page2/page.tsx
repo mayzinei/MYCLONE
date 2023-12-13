@@ -37,11 +37,14 @@ const HorizontalScrollCarousel = () => {
 		target: targetRef,
 	});
 
-	const x = useTransform(scrollYProgress, [0, 1], ["1%", "-62%"]);
+	const x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
 
 	return (
 		<section ref={targetRef} className="relative h-[300vh] bg-white">
 			<div className="sticky top-0 flex h-screen items-center overflow-hidden">
+				<h1 className="md:text-5xl lg:text-8xl font-bold text-blue-300 absolute md:right-0 lg:right-40 hidden md:block">
+					I showed my wallpapers.
+				</h1>
 				<motion.div style={{ x }} className="flex gap-6">
 					{cards.map((card, index) => {
 						return (
