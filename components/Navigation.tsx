@@ -13,7 +13,7 @@ const Navigation = () => {
 			</Link>
 			<p className="text-white lg:text-black">|</p>
 			<Link
-				href={"/"}
+				href={"/page2"}
 				className="font-unna text-xl text-white lg:text-black"
 			>
 				Enterprise
